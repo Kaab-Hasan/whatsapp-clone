@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import bcrypt from 'bcrypt';
+const bcrypt = require('bcrypt');
 import jwt from 'jsonwebtoken';
 import { User } from '@/types';
 

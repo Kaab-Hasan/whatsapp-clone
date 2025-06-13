@@ -6,8 +6,10 @@ const nextConfig = {
       bodySizeLimit: '2mb',
     },
   },
-  // External packages for server components (updated syntax)
-  serverExternalPackages: ['socket.io', 'socket.io-client'],
+  // External packages for server components
+  serverExternalPackages: ['socket.io', 'socket.io-client', 'bcrypt'],
+  // Disable edge runtime for API routes
+  runtime: 'nodejs',
 };
 
 module.exports = nextConfig; 
